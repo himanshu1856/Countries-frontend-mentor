@@ -27671,12 +27671,6 @@ var _countryCardDefault = parcelHelpers.interopDefault(_countryCard);
 var _countriesData = require("../countriesData");
 var _countriesDataDefault = parcelHelpers.interopDefault(_countriesData);
 const CountriesList = ({ query })=>{
-    const ar = (0, _countriesDataDefault.default).filter((country)=>{
-        country.name.common.includes(query);
-    });
-    console.log("Resultant array : ", ar);
-    console.log((0, _countriesDataDefault.default));
-    // const array = countriesData.map((country) => <CountryCard key={country.name.common} country={country} />);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "countries-container",
         children: (0, _countriesDataDefault.default).filter((country)=>{
@@ -27686,13 +27680,13 @@ const CountriesList = ({ query })=>{
                 country: country
             }, country.name.common, false, {
                 fileName: "components/CountriesList.jsx",
-                lineNumber: 20,
+                lineNumber: 10,
                 columnNumber: 14
             }, undefined);
         })
     }, void 0, false, {
         fileName: "components/CountriesList.jsx",
-        lineNumber: 15,
+        lineNumber: 5,
         columnNumber: 10
     }, undefined);
 };
